@@ -286,6 +286,7 @@
             ForeColor = SystemColors.ActiveCaptionText;
             Name = "Ventas";
             Text = "Ventas";
+            Load += Ventas_Load;
             ((System.ComponentModel.ISupportInitialize)CantidadPan).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
