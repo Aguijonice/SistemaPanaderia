@@ -33,21 +33,22 @@
             lbPrecio = new Label();
             lable34 = new Label();
             label = new Label();
-            panel1 = new Panel();
             groupBox2 = new GroupBox();
             btnAceptar = new Button();
             cmbNombre = new ComboBox();
+            ptbpanes = new PictureBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ptbpanes).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(ptbpanes);
             groupBox1.Controls.Add(lbStock);
             groupBox1.Controls.Add(lbPrecio);
             groupBox1.Controls.Add(lable34);
             groupBox1.Controls.Add(label);
-            groupBox1.Controls.Add(panel1);
             groupBox1.Font = new Font("Segoe UI Variable Text", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox1.Location = new Point(28, 4);
             groupBox1.Name = "groupBox1";
@@ -94,15 +95,6 @@
             label.TabIndex = 1;
             label.Text = "Precio:  ";
             // 
-            // panel1
-            // 
-            panel1.BackgroundImage = Properties.Resources.Panaderia5;
-            panel1.BackgroundImageLayout = ImageLayout.Stretch;
-            panel1.Location = new Point(26, 73);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(334, 420);
-            panel1.TabIndex = 0;
-            // 
             // groupBox2
             // 
             groupBox2.Controls.Add(btnAceptar);
@@ -134,6 +126,16 @@
             cmbNombre.Size = new Size(229, 44);
             cmbNombre.TabIndex = 0;
             // 
+            // ptbpanes
+            // 
+            ptbpanes.Image = Properties.Resources.Panaderia4;
+            ptbpanes.Location = new Point(22, 121);
+            ptbpanes.Name = "ptbpanes";
+            ptbpanes.Size = new Size(351, 373);
+            ptbpanes.SizeMode = PictureBoxSizeMode.StretchImage;
+            ptbpanes.TabIndex = 5;
+            ptbpanes.TabStop = false;
+            // 
             // ConsultaPan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -148,6 +150,7 @@
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)ptbpanes).EndInit();
             ResumeLayout(false);
         }
 
@@ -158,9 +161,9 @@
         private Label lbPrecio;
         private Label lable34;
         private Label label;
-        private Panel panel1;
         private GroupBox groupBox2;
         private Button btnAceptar;
         private ComboBox cmbNombre;
+        private PictureBox ptbpanes;
     }
 }
