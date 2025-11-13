@@ -57,6 +57,11 @@ namespace SistemaPanaderia
             Novedades novedades = new Novedades();
             novedades.Show();
         }
+
+        private void Inicio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

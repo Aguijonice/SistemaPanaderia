@@ -50,6 +50,7 @@
             lbSubtotal = new Label();
             lbventas = new Label();
             lbTotal = new Label();
+            btnAgregarCarrito = new Button();
             ((System.ComponentModel.ISupportInitialize)CantidadPan).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -143,6 +144,7 @@
             CantidadPan.Name = "CantidadPan";
             CantidadPan.Size = new Size(141, 27);
             CantidadPan.TabIndex = 9;
+            CantidadPan.ValueChanged += CantidadPan_ValueChanged;
             // 
             // ckChocolate
             // 
@@ -171,6 +173,7 @@
             cmpan1.Name = "cmpan1";
             cmpan1.Size = new Size(113, 28);
             cmpan1.TabIndex = 0;
+            cmpan1.SelectedIndexChanged += cmpan1_SelectedIndexChanged;
             // 
             // groupBox2
             // 
@@ -189,6 +192,7 @@
             cmpan2.Name = "cmpan2";
             cmpan2.Size = new Size(111, 28);
             cmpan2.TabIndex = 0;
+            cmpan2.SelectedIndexChanged += cmpan2_SelectedIndexChanged;
             // 
             // groupBox3
             // 
@@ -207,24 +211,27 @@
             cmpan3.Name = "cmpan3";
             cmpan3.Size = new Size(101, 28);
             cmpan3.TabIndex = 0;
+            cmpan3.SelectedIndexChanged += cmpan3_SelectedIndexChanged;
             // 
             // btBorrar
             // 
-            btBorrar.Location = new Point(544, 625);
+            btBorrar.Location = new Point(495, 608);
             btBorrar.Name = "btBorrar";
             btBorrar.Size = new Size(169, 79);
             btBorrar.TabIndex = 14;
             btBorrar.Text = "🗑️ Borrar";
             btBorrar.UseVisualStyleBackColor = true;
+            btBorrar.Click += btBorrar_Click;
             // 
             // btFFinalizarVenta
             // 
-            btFFinalizarVenta.Location = new Point(771, 630);
+            btFFinalizarVenta.Location = new Point(674, 608);
             btFFinalizarVenta.Name = "btFFinalizarVenta";
             btFFinalizarVenta.Size = new Size(179, 74);
             btFFinalizarVenta.TabIndex = 15;
             btFFinalizarVenta.Text = "✅ Finalizar Venta";
             btFFinalizarVenta.UseVisualStyleBackColor = true;
+            btFFinalizarVenta.Click += btFFinalizarVenta_Click;
             // 
             // lbSubtotal
             // 
@@ -258,12 +265,23 @@
             lbTotal.TabIndex = 18;
             lbTotal.Text = "$";
             // 
+            // btnAgregarCarrito
+            // 
+            btnAgregarCarrito.Location = new Point(878, 608);
+            btnAgregarCarrito.Name = "btnAgregarCarrito";
+            btnAgregarCarrito.Size = new Size(160, 72);
+            btnAgregarCarrito.TabIndex = 19;
+            btnAgregarCarrito.Text = "Agregar Carrito";
+            btnAgregarCarrito.UseVisualStyleBackColor = true;
+            btnAgregarCarrito.Click += btnAgregarCarrito_Click;
+            // 
             // Ventas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Peru;
             ClientSize = new Size(1064, 763);
+            Controls.Add(btnAgregarCarrito);
             Controls.Add(lbTotal);
             Controls.Add(lbventas);
             Controls.Add(lbSubtotal);
@@ -319,5 +337,6 @@
         private Label lbSubtotal;
         private Label lbventas;
         private Label lbTotal;
+        private Button btnAgregarCarrito;
     }
 }

@@ -62,14 +62,14 @@
             // sobreNosotrosToolStripMenuItem
             // 
             sobreNosotrosToolStripMenuItem.Name = "sobreNosotrosToolStripMenuItem";
-            sobreNosotrosToolStripMenuItem.Size = new Size(224, 26);
+            sobreNosotrosToolStripMenuItem.Size = new Size(192, 26);
             sobreNosotrosToolStripMenuItem.Text = "Sobre nosotros";
             sobreNosotrosToolStripMenuItem.Click += sobreNosotrosToolStripMenuItem_Click;
             // 
             // novedadesToolStripMenuItem
             // 
             novedadesToolStripMenuItem.Name = "novedadesToolStripMenuItem";
-            novedadesToolStripMenuItem.Size = new Size(224, 26);
+            novedadesToolStripMenuItem.Size = new Size(192, 26);
             novedadesToolStripMenuItem.Text = "Novedades";
             novedadesToolStripMenuItem.Click += novedadesToolStripMenuItem_Click;
             // 
@@ -139,6 +139,7 @@
             MainMenuStrip = menuStrip1;
             Name = "Inicio";
             Text = "Bienvenida";
+            Load += Inicio_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
